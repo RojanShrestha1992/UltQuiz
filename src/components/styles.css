@@ -13,20 +13,16 @@
 body {
   color: #fff;
 
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(#222, #101010);
+  background: radial-gradient(#353839, #232b2b);
 }
 
 .content {
-  width: 40vmin;
-  height: 40vmin;
+  width: 50vmin;
+  height: 50vmin;
   position: relative;
   display: flex;
   align-items: center;
@@ -160,11 +156,17 @@ body {
   }
 }
 /* loader css end */
+
+p {
+  /* font-family: "Gloria Hallelujah", sans-serif; */
+  font-family: "Handlee", cursive;
+}
 .app-header {
   display: flex;
   /* width: 100%; */
   padding: -1px 3%;
   justify-content: center;
+  align-items: center;
 }
 .title {
   font-family: "Ysabeau", sans-serif;
@@ -185,7 +187,7 @@ body {
   text-align: center;
 }
 .btn {
-  padding: 15px 12px;
+  padding: 8px 12px;
   border-radius: 7px;
   border: 2px solid rgb(53, 115, 240);
   background: transparent;
@@ -218,13 +220,12 @@ h4 {
 .btn-option {
   margin: 6px;
   color: #121214;
-  border-radius: 12px;
+  border-radius: 100px;
   border: none;
   outline: none;
   background: #777777;
   transition: 0.25s ease-in all;
   padding: 15px 12px;
-  border-radius: 7px;
   font-size: 19px;
 }
 
@@ -249,4 +250,18 @@ progress {
 .progress-question {
   display: flex;
   justify-content: space-between;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.timer {
+  border: 1.5px solid grey;
+  padding: 10px 22px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
 }
