@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/UltQuiz/static/css/main.1ce18ee3.css",
+    "main.js": "/UltQuiz/static/js/main.bfdcf19f.js",
+    "static/media/logo.png": "/UltQuiz/static/media/logo.54fa488c5d0259cdd633.png",
+    "index.html": "/UltQuiz/index.html",
+    "main.1ce18ee3.css.map": "/UltQuiz/static/css/main.1ce18ee3.css.map",
+    "main.bfdcf19f.js.map": "/UltQuiz/static/js/main.bfdcf19f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ce18ee3.css",
+    "static/js/main.bfdcf19f.js"
+  ]
+}
