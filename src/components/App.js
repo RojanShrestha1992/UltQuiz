@@ -6,6 +6,7 @@ import Error from "./Error";
 import Question from "./Question";
 import NextButton from "./NextButton";
 import Finished from "./Finished";
+import questionsData from "../data/questions.json";
 
 import "./styles.css";
 import StartScreen from "./StartScreen";
@@ -93,12 +94,22 @@ export default function App() {
   const numQuestions = questions.length;
   const maxPoints = questions.reduce((prev, cur) => prev + cur.points, 0);
 
-  useEffect(function () {
-    fetch("/data/questions.json")
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
-      .catch((err) => dispatch({ type: "dataFailed" }));
-  }, []);
+  // useEffect(function () {
+  //   fetch("../data/questions.json")
+  //     .then((res) => res.json())
+  //     .then((data) => dispatch({ type: "dataReceived", payload: data }))
+  //     .catch((err) => dispatch({ type: "dataFailed" }));
+  // }, []);
+
+useEffect(() => {
+  try {
+    dispatch({ type: "dataReceived", payload: questionsData.questions });
+  } catch (err) {
+    dispatch({ type: "dataFailed" });
+  }
+}, []);
+
+
   return (
     <div className="App">
       <Header />
